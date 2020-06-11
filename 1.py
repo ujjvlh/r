@@ -1,7 +1,7 @@
 import os
 def b(fn):
 	f=open(fn+".html","w")
-	f.write("<html>\n<body style=\"word-spacing:-.25em;\">\n")
+	f.write("<html lang=\"sa\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><body style=\"word-spacing:-.25em;\">\n")
 	if os.path.isfile("../"+fn):
 		fi=open("../"+fn,"r")
 		html=fi.read()
