@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-052-_Vasista_Vishvamithrayoh_Samvadhaha_.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-052-_Vasista_Vishvamithrayoh_Samvadhaha_.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 सदृष्ट्वापरमप्रीतोविश्वामित्रोमहाबलः।<br>
 प्रणतोविनयाद्वीरोवसिष्ठंजपतांवरम्॥1.52.1॥<br>
@@ -53,5 +53,5 @@
 यस्ययस्ययथाकामंषड्रसेष्वभिपूजितम्।<br>
 तत्सर्वंकामधुक्क्षिप्रमभिवर्षकृतेमम॥1.52.22॥<br>
 रसेनान्नेनपानेनलेह्यचोष्येणसंयुतम्।<br>
-अन्नानांनिचयंसर्वंसृजस्वशबलेत्वर॥1.52.23॥</div></div><script>ac.playbackRate=0.5</script></body>
+अन्नानांनिचयंसर्वंसृजस्वशबलेत्वर॥1.52.23॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

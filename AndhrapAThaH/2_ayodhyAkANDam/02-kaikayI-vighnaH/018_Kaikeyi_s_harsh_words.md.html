@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-018-Ramena_Dashratha_Santhvanam.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-018-Ramena_Dashratha_Santhvanam.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 <br>
 सददर्शासनेरामोनिषण्णंपितरंशुभे।<br>
@@ -82,5 +82,5 @@
 एतत्कुरुनरेन्द्रस्यवचनंरघुनन्दन।<br>
 सत्येनमहतारामतारयस्वनरेश्वरम्॥2.18.40॥<br>
 इतीवतस्यांपरुषंवदन्त्यांनचैवरामःप्रविवेशशोकम्।<br>
-प्रविव्यथेचापिमहानुभावोराजातुपुत्रव्यसनाभितप्तः॥2.18.41॥</div></div><script>ac.playbackRate=0.5</script></body>
+प्रविव्यथेचापिमहानुभावोराजातुपुत्रव्यसनाभितप्तः॥2.18.41॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

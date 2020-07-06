@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_5/Kanda_5_SK-060-Jambavan_s_wise_guidelines.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_5/Kanda_5_SK-060-Jambavan_s_wise_guidelines.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 <br>
 तस्यतद्वचनंश्रुत्वावालिसूनुरभाषत॥5.60.1॥<br>
@@ -14,5 +14,5 @@
 तमेवंकृतसङ्कल्पंजाम्बवान्हरिसत्तमः।<br>
 उवाचपरमप्रीतोवाक्यमर्थवदर्थवित्॥5.60.6॥<br>
 नतावदेषामतिरक्षमानोयथाभवान्पश्यतिराजपुत्र।<br>
-यथातुरामस्यमतिर्निविष्टातथाभवान्पश्यतुकार्यसिद्धम्॥5.60.7॥</div></div><script>ac.playbackRate=0.5</script></body>
+यथातुरामस्यमतिर्निविष्टातथाभवान्पश्यतुकार्यसिद्धम्॥5.60.7॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

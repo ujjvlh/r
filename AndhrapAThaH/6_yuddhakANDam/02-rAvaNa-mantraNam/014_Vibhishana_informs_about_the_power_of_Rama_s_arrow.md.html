@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-014-Vibhishana_informs_about_the_power_of_Rama_s_arrow.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-014-Vibhishana_informs_about_the_power_of_Rama_s_arrow.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 निशाचरेन्द्रस्यनिशम्यवाक्यंसकुम्भकर्णस्यचगर्जितानि।<br>
 विभीषणोराक्षसराजमुख्यमुवाचवाक्यंहितमर्थयुक्तम्॥6.14.1॥<br>
@@ -44,5 +44,5 @@
 इदंपुरस्यास्यसराक्षसस्यराज्ञश्चपथ्यंससुहृज्जनस्य।<br>
 सम्यग्घिवाक्यंस्वमतंब्रवीमिनरैन्द्रपुत्रायददामपत्नीम्॥6.14.21॥<br>
 परस्यवीर्यंस्वबलंचबुद्ध्वास्थानंक्षयंचैवतथैववृद्धिम्।<br>
-तथास्वपक्षेऽप्यनुमृश्यबुद्ध्यावदेत्क्षमंस्वामिहितंचमन्त्री॥6.14.22॥</div></div><script>ac.playbackRate=0.5</script></body>
+तथास्वपक्षेऽप्यनुमृश्यबुद्ध्यावदेत्क्षमंस्वामिहितंचमन्त्री॥6.14.22॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

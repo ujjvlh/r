@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-048-_Ahalya_Charitham.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-048-_Ahalya_Charitham.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 पृष्ट्वातुकुशलंतत्रपरस्परसमागमे।<br>
 कथान्तेसुमतिर्वाक्यंव्याजहारमहामुनिम्॥1.48.1॥<br>
@@ -83,5 +83,5 @@
 मत्सकाशेमुदायुक्तास्वंवपुर्धारयिष्यसि॥1.48.33॥<br>
 (एवम्उक्त्वामहातेजागौतमोदुष्टचारिणीम्।)<br>
 इममाश्रममुत्सृज्यसिद्धचारणसेविते।<br>
-हिमवच्छिखरेरम्येतपस्तेपेमहातपाः॥1.48.34॥</div></div><script>ac.playbackRate=0.5</script></body>
+हिमवच्छिखरेरम्येतपस्तेपेमहातपाः॥1.48.34॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

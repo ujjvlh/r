@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-025-Ramena_Kharasainya_Samharaha.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-025-Ramena_Kharasainya_Samharaha.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 अवष्टब्धधनुंरामंक्रुद्धंचरिपुघातिनम्।<br>
 ददर्शाश्रममागम्यखरःसहपुरस्सरैः॥3.25.1॥<br>
@@ -87,5 +87,5 @@
 रामस्यबाणाभिहतैर्विचित्रैःशूलपट्टिशैः।<br>
 खङ्गैःखण्डीकृतैःप्रासैर्विकीर्णैश्चपरश्वधैः॥3.25.44॥<br>
 चूर्णिताभिःशिलाभिश्चशरैश्चित्रैरनेकशः।<br>
-विच्छिन्नैःसमरेभूमिःविकीर्णाऽभूद्भयङ्करा॥3.25.45॥</div></div><script>ac.playbackRate=0.5</script></body>
+विच्छिन्नैःसमरेभूमिःविकीर्णाऽभूद्भयङ्करा॥3.25.45॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

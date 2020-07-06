@@ -6,15 +6,17 @@ def b(fn):
 		f.write("<div style=\"display:flex;flex-flow:column;height:100%;\">")
 		fi=open("../"+fn,"r")
 		html=fi.read()
-		f.write("<div style=\"display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;\">")
+		f.write("<div style=\"display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;\">")
+		f.write("<input type=\"range\" min=\"0\" max=\"100\" value=\"50\" id=\"slider\" oninput=\"ac.playbackRate=0.5+parseInt(slider.value)/200\"></input><br>");
+		f.write("<div style=\"display:flex;flex-direction:row;\">");
 		f.write("<div style=\"flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;\"><button onclick=\"ac.currentTime-=5;\">⏪</button></div>")
 		f.write("<audio controls id=\"ac\"><source src=\""+html[html.find('https'):html.find('mp3')+3]+"\" type=\"audio/mpeg\"></audio>")
-		f.write("</div>")
+		f.write("</div></div>")
 		f.write("<div style=\"padding:0.5em;flex: 1 1 auto;overflow-y:auto;\">")
 		f.write(html[html.find('</div>')+6:].replace('\n','<br>\n').replace(' ',''))
 		f.write("</div>")
 		f.write("</div>")
-		f.write("<script>ac.playbackRate=0.5</script>")
+		f.write("<script>ac.playbackRate=0.5+parseInt(slider.value)/200</script>")
 		fi.close()
 	else:
 		os.mkdir(fn)

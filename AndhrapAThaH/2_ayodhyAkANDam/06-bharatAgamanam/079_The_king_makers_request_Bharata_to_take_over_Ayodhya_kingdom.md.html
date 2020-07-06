@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-079-Bharatham_Prathi_Mantri_Mantrana.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-079-Bharatham_Prathi_Mantri_Mantrana.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 ततःप्रभातसमयेदिवसेचचतुर्दशे।<br>
 समेत्यराजकर्त्तारोभरतंवाक्यमब्रुवन्॥2.79.1॥<br>
@@ -34,5 +34,5 @@
 अनुत्तमंतद्वचनंनृपात्मजप्रभाषितंसंश्रवणेनिशम्यच।<br>
 प्रहर्षजास्तंप्रतिबाष्पबिन्दवोनिपेतुरार्यानननेत्रसम्भवाः॥2.79.16॥<br>
 ऊचुस्तेवचनमिदंनिशम्यहृष्टाःसामात्याःसपरिषदोवियातशोकाः।<br>
-पन्थानंनरवरभक्तिमान्जनश्चव्यादिष्टास्तववचनाच्चशिल्पिवर्गः॥2.79.17॥</div></div><script>ac.playbackRate=0.5</script></body>
+पन्थानंनरवरभक्तिमान्जनश्चव्यादिष्टास्तववचनाच्चशिल्पिवर्गः॥2.79.17॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-020-Ravana_sends_Shuka_to_Sugreeva_as_an_ambassador.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-020-Ravana_sends_Shuka_to_Sugreeva_as_an_ambassador.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 ततोनिविष्टांध्वजिनींसुग्रीवेणाभिपालिताम्।<br>
 ददर्शराक्षसोऽभ्येत्यशार्दूलोनामवीर्यवान्॥6.20.1॥<br>
@@ -67,5 +67,5 @@
 एतस्मिन्नन्तरेकालेयन्मयाह्यशुभंकृतम्।<br>
 सर्वंतदुपपद्येथाजह्यांचेद्यदिजीवितम्॥6.20.35॥<br>
 नाघातयत्तदारामःश्रुत्वातत्परिदेवनम्।<br>
-वानरानब्रवीद्रामोमुच्यतांदूतआगतः॥6.20.36॥</div></div><script>ac.playbackRate=0.5</script></body>
+वानरानब्रवीद्रामोमुच्यतांदूतआगतः॥6.20.36॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-019-Vanavaasa_Prathigna.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-019-Vanavaasa_Prathigna.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 <br>
 तदप्रियममित्रघ्नोवचनंमरणोपमम्।<br>
@@ -81,5 +81,5 @@
 तंगुणैःसमतांप्राप्तोभ्राताविपुलविक्रमः।<br>
 सौमित्रिरनुवव्राजधारयन्दुःखमात्मजम्॥2.19.39॥<br>
 प्रविश्यवेश्मातिभृशंमुदान्वितंसमीक्ष्यतांचार्थविपत्तिमागताम्।<br>
-नचैवरामोऽत्रजगामविक्रियांसुहृज्जनस्यात्मविपत्तिशङ्कया॥2.19.40॥</div></div><script>ac.playbackRate=0.5</script></body>
+नचैवरामोऽत्रजगामविक्रियांसुहृज्जनस्यात्मविपत्तिशङ्कया॥2.19.40॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

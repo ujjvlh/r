@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-099-The_battle_between_Rama_and_Ravana_0.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-099-The_battle_between_Rama_and_Ravana_0.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 सुग्रीवेणसमीक्ष्याथक्रोधात्संरक्तलोचनः।<br>
 अङ्गदस्यचमूंभीमांक्षोभयामाससायकैः॥6.99.1॥<br>
@@ -51,5 +51,5 @@
 स्फोटयन्निवशब्देनलङ्कांसाट्टालगोपुराम्॥6.99.24॥<br>
 महेन्द्रेणेवदेवानांनादःसमभवन्महान्॥6.99.25॥<br>
 अथेन्द्रशत्रुस्त्रिदिवालयानांवनौकसांचैवमहाप्रणादम्।<br>
-श्रुत्वासरोषंयुधिराक्षसेन्द्रःपुनश्चयुद्धाभिमुखोऽवतस्थे॥6.99.26॥</div></div><script>ac.playbackRate=0.5</script></body>
+श्रुत्वासरोषंयुधिराक्षसेन्द्रःपुनश्चयुद्धाभिमुखोऽवतस्थे॥6.99.26॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

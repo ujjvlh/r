@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-082-Hanuma_Leads_the_monkey_army_0.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-082-Hanuma_Leads_the_monkey_army_0.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 श्रुत्वातुभीमनिर्ह्रादंशक्राशनिसमस्वनम्।<br>
 वीक्षमाणादिशःसर्वादुद्रुवुर्वानरर्षभाः॥6.82.1॥<br>
@@ -56,5 +56,5 @@
 सोऽर्चिःपिनद्धोददृशेहोमशोणिततर्पितः।<br>
 सन्ध्यागतइवादित्यःसुतीव्रोऽग्निःसमुत्थितः॥6.82.28॥<br>
 अथेन्द्रजिद्राक्षसभूतयेतुजुहावहव्यंविधिनाविधानवित्।<br>
-दृष्ट्वाव्यतिष्ठन्तचराक्षसास्तेमहासमूहेषुनयानयज्ञाः॥6.82.29॥</div></div><script>ac.playbackRate=0.5</script></body>
+दृष्ट्वाव्यतिष्ठन्तचराक्षसास्तेमहासमूहेषुनयानयज्ञाः॥6.82.29॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

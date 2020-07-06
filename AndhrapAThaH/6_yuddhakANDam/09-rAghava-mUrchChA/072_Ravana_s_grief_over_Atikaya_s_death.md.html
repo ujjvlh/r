@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-072-Ravana_s_grief_over_Atikaya_s_death_0.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-072-Ravana_s_grief_over_Atikaya_s_death_0.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 अतिकायंहतंश्रुत्वालक्ष्मणेनमहौजसा।<br>
 उद्वेगमगमद्राजावचनंचेदमब्रवीत्॥6.72.1॥<br>
@@ -37,5 +37,5 @@
 सतान्सर्वान्समादिश्यरावणोराक्षसाधिपः।<br>
 मन्युशल्यंवहन्दीनःप्रविवेशस्वमालयम्॥6.72.18॥<br>
 ततःससन्दीपितकोपवह्निर्निशाचराणामधिपोमहाबलः।<br>
-तदेवपुत्रव्यसनंविचिन्तयन्मुहुर्मुहुश्चैवतदाव्यनिश्वसत्॥6.72.19॥</div></div><script>ac.playbackRate=0.5</script></body>
+तदेवपुत्रव्यसनंविचिन्तयन्मुहुर्मुहुश्चैवतदाव्यनिश्वसत्॥6.72.19॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-073-Sita_Rama_Vivahaha.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-073-Sita_Rama_Vivahaha.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 यस्मिंस्तुदिवसेराजाचक्रेगोदानमुत्तमम्।<br>
 तस्मिंस्तुदिवसेशूरोयुधाजित्समुपेयिवान्॥1.73.1॥<br>
@@ -90,5 +90,5 @@
 ईदृशेवर्तमानेतुतूर्योद्घुष्टनिनादिते।<br>
 त्रिरग्निंतेपरिक्रम्यऊहुर्भार्यामहौजसः॥1.73.36॥<br>
 अथोपकार्यांजग्मुस्तेसभार्यारघुनन्दनाः।<br>
-राजाप्यनुययौपश्यन्सर्षिसङ्घःसबान्धवः॥1.73.37॥</div></div><script>ac.playbackRate=0.5</script></body>
+राजाप्यनुययौपश्यन्सर्षिसङ्घःसबान्धवः॥1.73.37॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

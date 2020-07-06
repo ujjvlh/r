@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-022-Kharasya_Yudhdha_Sidhathaa.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-022-Kharasya_Yudhdha_Sidhathaa.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 एवमाधर्षितःशूरःशूर्पणख्याखरस्तदा।<br>
 उवाचरक्षसांमध्येखरःखरतरंवचः॥3.22.1॥<br>
@@ -52,5 +52,5 @@
 सचोदितोरथःशीघ्रंखरस्यरिपुघातिनः।<br>
 शब्देनापूरयामासदिशश्चप्रदिशस्तदा॥3.22.25॥<br>
 प्रवृद्धमन्युस्तुखरःखरस्वनोरिपोर्वधार्थंत्वरितोयथान्तकः।<br>
-अचूचुदत्सारथिमुन्नदन्घनंमहाबलोमेघइवाश्मवर्षवान्॥3.22.26॥</div></div><script>ac.playbackRate=0.5</script></body>
+अचूचुदत्सारथिमुन्नदन्घनंमहाबलोमेघइवाश्मवर्षवान्॥3.22.26॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

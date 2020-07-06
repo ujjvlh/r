@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-005-Sri_Rama_recollects_the_lotus-eyed_Seetha.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-005-Sri_Rama_recollects_the_lotus-eyed_Seetha.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 सातुनीलेनविधिवत्स्वारक्षासुसमाहिता।<br>
 सागरस्योत्तरेतीरेसाधुसेनानिवेशिता॥6.5.1॥<br>
@@ -46,5 +46,5 @@
 एवंविलपतस्तस्यतत्ररामस्यधीमतः।<br>
 दिनक्षयान्मन्दरुचिर्भास्करोऽस्तमुपागमत्॥6.5.22॥<br>
 आश्वासितोलक्ष्मणेनरामःसन्ध्यामुपासत॥6.5.23॥<br>
-स्मरन्कमलपत्राक्षींसीतांशोकाकुलीकृतः॥6.5.24॥</div></div><script>ac.playbackRate=0.5</script></body>
+स्मरन्कमलपत्राक्षींसीतांशोकाकुलीकृतः॥6.5.24॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

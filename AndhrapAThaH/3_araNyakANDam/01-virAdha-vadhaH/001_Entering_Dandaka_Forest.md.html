@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-001-Rusheenam_Abhaya_Prathanam.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-001-Rusheenam_Abhaya_Prathanam.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 प्रविश्यतुमहारण्यंदण्डकारण्यमात्मवान्।<br>
 ददर्शरामोदुर्धर्षस्तापसाश्रममण्डलम्॥3.1.1॥<br>
@@ -44,5 +44,5 @@
 एवमुक्त्वाफलैर्मूलैःपुष्पैर्वन्यैश्चराघवम्।<br>
 अन्यैश्चविविधाहारैःसलक्ष्मणमपूजयन्॥3.1.21॥<br>
 तथान्येतापसाःसिद्धारामंवैश्वानरोपमाः।<br>
-न्यायवृत्तायथान्यायंतर्पयामासुरीश्वरम्॥3.1.22॥</div></div><script>ac.playbackRate=0.5</script></body>
+न्यायवृत्तायथान्यायंतर्पयामासुरीश्वरम्॥3.1.22॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-071-Kabandhena_Swa_Vruththantha_Kathanam.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-071-Kabandhena_Swa_Vruththantha_Kathanam.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 रूपमासीन्ममाचिन्त्यंत्रिषुलोकेषुविश्रुतम्।<br>
 यथासोमस्यशक्रस्यसूर्यस्यचयथावपुः॥3.71.1॥<br>
@@ -66,5 +66,5 @@
 तेनसख्यंचकर्तव्यंन्यायवृत्तेनराघव।<br>
 कल्पयिष्यतितेप्रीतःसाहाय्यंलघुविक्रमः॥3.71.32॥<br>
 नहितस्यास्त्यविज्ञातंत्रिषुलोकेषुराघव।<br>
-सर्वान्परिसृतोलोकान्पुराऽसौकारणान्तरे॥3.71.33॥</div></div><script>ac.playbackRate=0.5</script></body>
+सर्वान्परिसृतोलोकान्पुराऽसौकारणान्तरे॥3.71.33॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

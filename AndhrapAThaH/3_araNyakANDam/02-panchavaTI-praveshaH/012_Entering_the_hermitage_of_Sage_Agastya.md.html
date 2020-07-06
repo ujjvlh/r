@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-012-Agastya_Darshanam.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-012-Agastya_Darshanam.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 सप्रविश्याश्रमपदंलक्ष्मणोराघवानुजः।<br>
 अगस्त्यशिष्यमासाद्यवाक्यमेतदुवाचह॥3.12.1॥<br>
@@ -73,5 +73,5 @@
 तद्धनुस्तौचतूणीरौशरंखङ्गंचमानद।<br>
 जयायप्रतिगृह्णीष्ववज्रंवज्रधरोयथा॥3.12.37॥<br>
 एवमुक्त्वामहातेजाःसमस्तंतद्वरायुधम्।<br>
-दत्त्वारामायभगवानगस्त्यःपुनरब्रवीत्॥3.12.38॥</div></div><script>ac.playbackRate=0.5</script></body>
+दत्त्वारामायभगवानगस्त्यःपुनरब्रवीत्॥3.12.38॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

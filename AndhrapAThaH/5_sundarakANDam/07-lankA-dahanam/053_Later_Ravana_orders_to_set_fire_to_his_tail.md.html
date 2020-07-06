@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_5/Kanda_5_SK-053-Later_Ravana_orders_to_set_fire_to_his_tail.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_5/Kanda_5_SK-053-Later_Ravana_orders_to_set_fire_to_his_tail.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 <br>
 तस्यतद्वचनंश्रुत्वादशग्रीवोमहाबलः।<br>
@@ -86,5 +86,5 @@
 सतंगृह्यमहाबाहुःकालायसपरिष्कृतम्।<br>
 रक्षिणस्तान्पुनःसर्वान्सूदयामासमारुतिः॥5.53.43॥<br>
 सतान्निहत्वारणचण्डविक्रमःसमीक्षमाणःपुनरेवलङ्काम्।<br>
-प्रदीप्तलाङ्गूलकृतार्चिमालीप्रकाशतादित्यइवार्चिमाली॥5.53.44॥</div></div><script>ac.playbackRate=0.5</script></body>
+प्रदीप्तलाङ्गूलकृतार्चिमालीप्रकाशतादित्यइवार्चिमाली॥5.53.44॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

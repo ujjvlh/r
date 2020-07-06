@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-088-A_fierce_battle_starts_between_Lakshmana_and_Indrajit_0.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-088-A_fierce_battle_starts_between_Lakshmana_and_Indrajit_0.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 विभीषणवचःश्रुत्वारावणिःक्रोधमूर्च्छितः।<br>
 अब्रवीत्परुषंवाक्यंवेगेनाभ्युत्पपातह॥6.88.1॥<br>
@@ -78,5 +78,5 @@
 सुसम्प्रहृष्टौनरराक्षसोत्तमौजयैषिणौमार्गणचापधारिणौ।<br>
 परस्परंतौप्रववर्षतुर्भृशंशरौघवर्षेणबलाहकाविव॥6.88.39॥<br>
 अभिप्रवृद्धौयुधियुद्धकोविदौशरासिचण्डौशितशस्त्रधारिणौ।<br>
-अभीक्ष्णमाविव्यधतुर्महाबलौमहाहवेशम्बरवासवाविव॥6.88.40॥</div></div><script>ac.playbackRate=0.5</script></body>
+अभीक्ष्णमाविव्यधतुर्महाबलौमहाहवेशम्बरवासवाविव॥6.88.40॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

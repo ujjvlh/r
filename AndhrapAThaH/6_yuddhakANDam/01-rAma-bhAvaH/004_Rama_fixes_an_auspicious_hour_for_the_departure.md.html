@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-004-Rama_fixes_an_auspicious_hour_for_the_departure_.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-004-Rama_fixes_an_auspicious_hour_for_the_departure_.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 श्रुत्वाहनुमतोवाक्यंयथावदनुपूर्वशः।<br>
 ततोऽब्रवीन्महातेजारामःसत्यपराक्रमः॥6.4.1॥<br>
@@ -244,5 +244,5 @@
 ददृशुस्तेमहोत्साहावाताहतजलाशयम्।<br>
 अनिलोद्धूतमाकाशेप्रवल्गन्तमिवोर्मिभिः॥6.4.124॥<br>
 ततोविस्मयमापन्नाददृशुर्हरयस्तदा।<br>
-भ्रान्तोर्मिजलसन्नादंप्रलोलमिवसागरम्॥6.4.125॥</div></div><script>ac.playbackRate=0.5</script></body>
+भ्रान्तोर्मिजलसन्नादंप्रलोलमिवसागरम्॥6.4.125॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

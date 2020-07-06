@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-084-Guha_Bharatha_Samvadaha.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_2/Kanda_2_AYK-084-Guha_Bharatha_Samvadaha.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 ततोनिविष्टांध्वजिनींगङ्गामन्वाश्रितांनदीम्।<br>
 निषादराजोदृष्ट्वैवज्ञातीन्सन्त्वरितोऽब्रवीत्॥2.84.1॥<br>
@@ -36,5 +36,5 @@
 अस्तिमूलंफलंचैवनिषादैःसमुपाहृतम्।<br>
 आर्द्रञ्चमांसंशुष्कञ्चवन्यंचोच्चावचंमहत्॥2.84.17॥<br>
 आशंसेस्वाशितासेनावत्स्यतीमांविभावरीम्।<br>
-अर्चितोविविधैःकामैःश्वःससैन्योगमिष्यसि॥2.84.18॥</div></div><script>ac.playbackRate=0.5</script></body>
+अर्चितोविविधैःकामैःश्वःससैन्योगमिष्यसि॥2.84.18॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

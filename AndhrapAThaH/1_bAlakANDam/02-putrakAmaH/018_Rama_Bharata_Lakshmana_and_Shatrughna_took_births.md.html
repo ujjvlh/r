@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-018-Rama_Janma.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_1/Kanda_1_BK-018-Rama_Janma.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 निर्वृत्तेतुक्रतौतस्मिन्हयमेधेमहात्मनः।<br>
 प्रतिगृह्यसुराभागान्प्रतिजग्मुर्यथागतम्॥1.18.1॥<br>
@@ -140,5 +140,5 @@
 ममचायमनुप्राप्तोमहानभ्युदयोद्विज।<br>
 तवागमनजःकृत्स्नोधर्मश्चानुत्तमोमम॥1.18.59॥<br>
 इतिहृदयसुखंनिशम्यवाक्यंश्रुतिसुखमात्मवताविनीतमुक्तम्।<br>
-प्रथितगुणयशागुणैर्विशिष्टःपरमऋषिःपरमंजगामहर्षम्॥1.18.60॥</div></div><script>ac.playbackRate=0.5</script></body>
+प्रथितगुणयशागुणैर्विशिष्टःपरमऋषिःपरमंजगामहर्षम्॥1.18.60॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

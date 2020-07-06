@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-065-Lakshmana_Krodho_Upashamanam.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-065-Lakshmana_Krodho_Upashamanam.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 तप्यमानंतथारामंसीताहरणकर्शितम्।<br>
 लोकानामभवेयुक्तंसंवर्तकमिवानलम्॥3.65.1॥<br>
@@ -32,5 +32,5 @@
 नचेत्साम्नाप्रदास्यन्तिपत्नींतेत्रिदशेश्वराः।<br>
 कोसलेन्द्रततःपश्चात्प्राप्तकालंकरिष्यसि॥3.65.15॥<br>
 शीलेनसाम्नाविनयेनसीतांनयेननप्राप्स्यसिचेन्नरेन्द्र।<br>
-ततःसमुत्पादयहेमपुङ्खैर्महेन्द्रवज्रप्रतिमैःशरौघैः॥3.65.16॥</div></div><script>ac.playbackRate=0.5</script></body>
+ततःसमुत्पादयहेमपुङ्खैर्महेन्द्रवज्रप्रतिमैःशरौघैः॥3.65.16॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

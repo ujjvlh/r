@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-058-Rama_Shokaha.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_3/Kanda_3_ARK-058-Rama_Shokaha.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 सदृष्ट्वालक्ष्मणंदीनंशून्येदशरथात्मजः।<br>
 पर्यपृच्छतधर्मात्मावैदेहीमागतंविना॥3.58.1॥<br>
@@ -40,5 +40,5 @@
 विगर्हमाणोऽनुजमार्तरूपंक्षुधाश्रमाच्चैवपिपासयाच।<br>
 विनिःश्वसन्शुष्कमुखोविवर्णःप्रतिश्रयंप्राप्यसमीक्ष्यशून्यम्॥3.58.19॥<br>
 स्वमाश्रमंसम्प्रविगाह्यवीरोविहारदेशाननुसृत्यकांश्चित्।<br>
-एतत्तदित्येवनिवासभूमौप्रहृष्टरोमाव्यथितोबभूव॥3.58.20॥</div></div><script>ac.playbackRate=0.5</script></body>
+एतत्तदित्येवनिवासभूमौप्रहृष्टरोमाव्यथितोबभूव॥3.58.20॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>

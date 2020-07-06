@@ -1,5 +1,5 @@
 <html lang="sa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><body style="word-spacing:-.25em;margin:0;padding:0;">
-<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-028-Shuka_enumerates_the_enemies_0.mp3" type="audio/mpeg"></audio></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
+<div style="display:flex;flex-flow:column;height:100%;"><div style="display:flex;background-color:grey;padding:0.5em;flex: 0 1 auto;flex-direction: column;"><input type="range" min="0" max="100" value="50" id="slider" oninput="ac.playbackRate=0.5+parseInt(slider.value)/200"></input><br><div style="display:flex;flex-direction:row;"><div style="flex: 0 1 auto;margin-top: auto;margin-bottom:auto;padding-right:1em;display:block;"><button onclick="ac.currentTime-=5;">⏪</button></div><audio controls id="ac"><source src="https://archive.org/download/Ramayana-recitation-Sriram-harisItArAmamUrti-Ghanapaati-v2/Kanda_6/Kanda_6_YK-028-Shuka_enumerates_the_enemies_0.mp3" type="audio/mpeg"></audio></div></div><div style="padding:0.5em;flex: 1 1 auto;overflow-y:auto;"><br>
 <br>
 सारणस्यवचःश्रुत्वारावणंराक्षसाधिपम्।<br>
 बलमादिश्यतत्सर्वंशुकोवाक्यमथाब्रवीत्॥6.28.1॥<br>
@@ -86,5 +86,5 @@
 सुग्रीवोवानरेन्द्रस्त्वांयुद्धार्थमभिवर्तते॥6.28.42॥<br>
 महाबलवृतोनित्यंमहाबलपराक्रमः॥6.28.43॥<br>
 इमांमहाराजसमीक्ष्यवाहिनीमुपस्थितांप्रज्वलितग्रहोपमाम्।<br>
-ततःप्रयत्नःपरमोविधीयतांयथाजयःस्यान्नपरैःपराजयः॥6.28.44॥</div></div><script>ac.playbackRate=0.5</script></body>
+ततःप्रयत्नःपरमोविधीयतांयथाजयःस्यान्नपरैःपराजयः॥6.28.44॥</div></div><script>ac.playbackRate=0.5+parseInt(slider.value)/200</script></body>
 </html>
