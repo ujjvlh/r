@@ -30,4 +30,3 @@ def b(fn):
 	f.close()
 b("AndhrapAThaH")
 #../AndhrapAThaH/1_bAlakANDam/02-putrakAmaH/005_City_ayodhya_detailed.md
-
